@@ -11,7 +11,7 @@ PlatformerGame.Logo.prototype = {
   create: function() {
 
     //Change the background colour
-    this.game.stage.backgroundColor = this.colour;
+    this.game.stage.backgroundColor = "333";
 
     this.platforms = this.game.add.group();
 
@@ -178,7 +178,7 @@ PlatformerGame.Logo.prototype = {
   skip : function() {
     if (!this.pressed) {
         this.pressed = true;
-        this.state.start('GameJam', true, false, this.colour, this.timeout);
+        this.state.start('GameJam', true, false, "000", this.timeout);
     }
   },
 
@@ -188,7 +188,7 @@ PlatformerGame.Logo.prototype = {
         this.pressed = true;
         var colour = "333";
         var timeout = 2;
-        this.state.start('GameJam', true, false, this.colour, this.timeout);
+        this.state.start('GameJam', true, false, "000", this.timeout);
     }
   },
 
